@@ -97,5 +97,8 @@
   <ItemGroup>
     <Resource Include="Db\TextFile1.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Requirements\R_001.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
