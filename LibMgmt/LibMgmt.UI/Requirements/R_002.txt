@@ -1,0 +1,5 @@
+﻿Design LoginView.xaml
+Give proper names of the controls
+
+and
+Design AccountView.xaml (whch will display the logged in user.)

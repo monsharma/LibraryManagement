@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace LibMgmt.UI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AccountView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AccountView : UserControl
     {
-        public MainWindow()
+        public AccountView()
         {
             InitializeComponent();
-            //
-
-            if (MainContainer.HasContent)
-                MainContainer.Content = null;
-
-            MainContainer.Content = new LoginView();
         }
     }
 }
