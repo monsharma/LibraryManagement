@@ -22,7 +22,7 @@ namespace LibMgmt.UI
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); //Loads the compiled page of a component. (IComponentConnector.InitializeComponent())
             //
 
             if (MainContainer.HasContent)
