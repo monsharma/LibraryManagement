@@ -130,5 +130,8 @@
     <Resource Include="Requirements\WPF controls.png" />
     <Resource Include="Requirements\WPF_User_Control.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Understanding\TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

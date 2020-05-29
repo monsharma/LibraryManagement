@@ -1,0 +1,7 @@
+﻿XAML is mostly used to define the visual contents of a page and works together with a C# code-behind file.
+
+When Visual Studio builds the project, it parses the XAML file to generate a C# code file. 
+If we look in the XamlSamples\XamlSamples\obj\Debug directory, you’ll find a file named XamlSamples.MainPage.xaml.g.cs. 
+The ‘g’ stands for generated. This is the other partial class definition of MainPage that contains the definition of the InitializeComponent 
+method called from the MainPage constructor. 
+These two partial MainPage class definitions can then be compiled together.
