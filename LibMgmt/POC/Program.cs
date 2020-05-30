@@ -43,7 +43,7 @@ namespace POC
                     finally
                     {
                         sw.Stop();
-                        Console.WriteLine($"Finished running :  {r.Name} Completed in {sw.ElapsedMilliseconds} ms \n");
+                        Console.WriteLine($"\nFinished running :  {r.Name} Completed in {sw.ElapsedMilliseconds} ms \n");
                     }
                 }
             }

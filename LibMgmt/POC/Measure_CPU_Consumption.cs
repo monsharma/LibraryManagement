@@ -14,12 +14,13 @@ namespace POC
         private static TimeSpan lastTotalProcessorTime;
         private static DateTime curTime;
         private static TimeSpan curTotalProcessorTime;
-        SemaphoreSlim ss = new SemaphoreSlim(1);
+       
         System.Timers.Timer timer = new System.Timers.Timer(1000);
         volatile static int count = 0;
         
         public override void Run(string[] args)
         {
+            SemaphoreSlim ss = new SemaphoreSlim(1);
             string processName = "Taskmgr";
             ss.Wait();
             timer.Elapsed += (s, e) =>
