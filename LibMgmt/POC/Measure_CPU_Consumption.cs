@@ -1,24 +1,27 @@
-﻿// Code to get CPU utilization of a process.
-
-
-using System;
+﻿using System;
 using System.Diagnostics;
-using System.Timers;
+using System.Threading;
 
-namespace ConsoleApp1
+namespace POC
 {
-    class Program
+    /// <summary>
+    /// Use of Timer, SemaphoreSlim
+    /// </summary>
+    [Run]
+    public class Measure_CPU_Consumption : Runnable
     {
         private static DateTime lastTime = DateTime.MinValue;
         private static TimeSpan lastTotalProcessorTime;
         private static DateTime curTime;
         private static TimeSpan curTotalProcessorTime;
-
-        static Timer timer = new Timer(1000);
+        SemaphoreSlim ss = new SemaphoreSlim(1);
+        System.Timers.Timer timer = new System.Timers.Timer(1000);
         volatile static int count = 0;
-        static void Main(string[] args)
+        
+        public override void Run(string[] args)
         {
             string processName = "Taskmgr";
+            ss.Wait();
             timer.Elapsed += (s, e) =>
             {
                 Process p = Process.GetProcessesByName(processName)[0];
@@ -42,12 +45,14 @@ namespace ConsoleApp1
                 }
 
                 if (++count == 20)
+                {
                     timer.Stop();
+                    ss.Release();
+                }
             };
             timer.Start();
-            Console.ReadKey();
-            //timer.Stop();
-
+            ss.Wait();
+            ss.Release();
         }
     }
 }
