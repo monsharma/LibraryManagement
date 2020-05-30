@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibMgmt.UI", "LibMgmt.UI\Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC", "POC\POC.csproj", "{634E9647-7018-4AB3-A4D5-2EB332F17FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCv2", "POCv2\POCv2.csproj", "{E7A40E2E-C83D-4AB5-911D-ED8E2B3861D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{634E9647-7018-4AB3-A4D5-2EB332F17FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{634E9647-7018-4AB3-A4D5-2EB332F17FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{634E9647-7018-4AB3-A4D5-2EB332F17FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A40E2E-C83D-4AB5-911D-ED8E2B3861D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A40E2E-C83D-4AB5-911D-ED8E2B3861D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A40E2E-C83D-4AB5-911D-ED8E2B3861D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A40E2E-C83D-4AB5-911D-ED8E2B3861D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
