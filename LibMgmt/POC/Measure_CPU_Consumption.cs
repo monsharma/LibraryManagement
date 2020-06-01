@@ -7,7 +7,7 @@ namespace POC
     /// <summary>
     /// Use of Timer, SemaphoreSlim
     /// </summary>
-    [Run]
+    //[Run]
     public class Measure_CPU_Consumption : Runnable
     {
         private static DateTime lastTime = DateTime.MinValue;
